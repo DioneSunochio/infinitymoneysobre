@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Infinity Money — um diário de gastos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Um diário de gastos. Sem conta, sem banco, sem assinatura. Seu dinheiro não sai do seu celular."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#fef8f6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#141312" media="(prefers-color-scheme: dark)" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ffdcbd'/%3E%3Cg fill='none' stroke='%23693c00' stroke-width='4' stroke-linecap='round'%3E%3Cpath d='M32 32c-5.33-7.11-10.67-10.67-16-10.67a10.67 10.67 0 1 0 0 21.34c5.33 0 10.67-3.56 16-10.67Z'/%3E%3Cpath d='M32 32c5.33 7.11 10.67 10.67 16 10.67a10.67 10.67 0 0 0 0-21.34c-5.33 0-10.67 3.56-16 10.67Z'/%3E%3C/g%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <a class="site-brand" href="./">Infinity Money</a>
+      <a class="site-apoiar" href="#apoio">Apoiar</a>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+      <section class="hero">
+        <h1>
+          <span class="hero-line">Um diário de gastos.</span>
+          <span class="hero-line">Sem conta, sem banco, sem assinatura.</span>
+        </h1>
+        <p class="hero-proof">Seu dinheiro não sai do seu celular.</p>
+        <p class="hero-actions">
+          <a class="button" href="https://dionesunochio.github.io/infinitymoney/">Abrir o app</a>
+          <a class="button button-quiet" href="#verdade">Como saber que é verdade</a>
+        </p>
+      </section>
+
+      <section aria-labelledby="ausencias">
+        <h2 id="ausencias">Três coisas que ele não faz</h2>
+
+        <dl class="absences">
+          <div>
+            <dt>Sem conta</dt>
+            <dd>Não tem login, não tem cadastro, não tem senha para esquecer.</dd>
+          </div>
+          <div>
+            <dt>Sem banco</dt>
+            <dd>
+              Não pede acesso ao seu banco nem conexão com nenhum serviço financeiro. Você digita o
+              que gastou.
+            </dd>
+          </div>
+          <div>
+            <dt>Sem assinatura</dt>
+            <dd>Não existe plano, mensalidade ou renovação. É grátis.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="verdade" aria-labelledby="verdade-titulo">
+        <h2 id="verdade-titulo">Como saber que é verdade</h2>
+        <p>
+          Não acredite nesta página. O app inteiro é servido a partir do seu próprio endereço, e
+          você pode conferir isso em menos de dois minutos.
+        </p>
+
+        <ol class="steps">
+          <li>Abra o app no navegador e abra as ferramentas de desenvolvedor.</li>
+          <li>Vá em Network (Rede), marque "Preserve log" e recarregue a página.</li>
+          <li>
+            Toda requisição da lista vem do mesmo endereço do app. Não existe domínio de terceiro,
+            nem de análise, nem de anúncio.
+          </li>
+          <li>
+            Em Application (Aplicativo), abra o IndexedDB: os seus lançamentos estão ali, neste
+            aparelho, neste navegador.
+          </li>
+          <li>
+            Em um perfil novo do navegador, apague os dados do site e recarregue: o app volta vazio.
+            Ele era local de verdade.
+          </li>
+        </ol>
+
+        <aside class="warning">
+          <h3>No iPhone, instale antes de usar</h3>
+          <p>
+            O Safari apaga os dados de sites que não estão instalados depois de sete dias. Toque em
+            Compartilhar, depois em "Adicionar à Tela de Início". Se preferir não instalar, exporte
+            um backup pelo app de vez em quando.
+          </p>
+        </aside>
+      </section>
+
+      <section id="apoio" aria-labelledby="apoio-titulo">
+        <h2 id="apoio-titulo">Apoiar</h2>
+        <p>
+          O Infinity Money é grátis e não tem anúncio dentro do diário. Se ele te ajudou e você
+          quiser contribuir com a manutenção, o apoio é voluntário e não compra nada: nem recurso
+          extra, nem versão diferente, nem prioridade.
+        </p>
+      </section>
+
+      <section id="qr" aria-labelledby="qr-titulo">
+        <h2 id="qr-titulo">QR para apoiar</h2>
+        <figure class="pix-card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 57 57"
+            width="228"
+            height="228"
+            role="img"
+            aria-label="QR Code para apoiar via Pix"
+            shape-rendering="crispEdges"
+          >
+            <path fill="#ffffff" d="M0 0h57v57H0z" />
+            <path
+              stroke="#000000"
+              d="M4 4.5h7m3 0h3m1 0h2m1 0h3m5 0h1m3 0h1m3 0h1m3 0h1m2 0h1m1 0h7M4 5.5h1m5 0h1m1 0h1m1 0h1m6 0h1m1 0h3m3 0h1m2 0h2m2 0h2m2 0h1m1 0h3m1 0h1m5 0h1M4 6.5h1m1 0h3m1 0h1m3 0h1m1 0h2m3 0h1m1 0h2m1 0h1m1 0h8m3 0h1m3 0h2m1 0h1m1 0h3m1 0h1M4 7.5h1m1 0h3m1 0h1m2 0h2m1 0h1m3 0h1m2 0h1m1 0h1m2 0h1m3 0h1m1 0h1m3 0h1m2 0h1m1 0h1m2 0h1m1 0h3m1 0h1M4 8.5h1m1 0h3m1 0h1m1 0h1m2 0h3m1 0h5m1 0h7m1 0h1m2 0h4m1 0h1m4 0h1m1 0h3m1 0h1M4 9.5h1m5 0h1m3 0h3m1 0h1m4 0h2m1 0h1m3 0h1m2 0h1m1 0h5m1 0h2m3 0h1m5 0h1M4 10.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M15 11.5h2m5 0h1m1 0h3m3 0h1m3 0h1m1 0h2m1 0h4M4 12.5h1m1 0h1m1 0h1m1 0h1m4 0h1m1 0h3m2 0h1m3 0h8m1 0h2m1 0h1m1 0h3m1 0h1m3 0h1m2 0h1M5 13.5h1m1 0h1m4 0h1m1 0h1m3 0h1m5 0h8m1 0h2m2 0h4m6 0h3m1 0h2M7 14.5h9m1 0h2m2 0h1m3 0h1m1 0h1m4 0h2m3 0h4m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1M4 15.5h1m2 0h2m2 0h1m4 0h1m4 0h1m1 0h2m4 0h1m1 0h3m3 0h2m1 0h2m5 0h3m1 0h1M4 16.5h1m4 0h3m2 0h1m1 0h6m1 0h4m3 0h3m1 0h1m2 0h1m1 0h3m1 0h3m2 0h1m1 0h2M4 17.5h2m2 0h2m2 0h1m1 0h1m1 0h3m1 0h4m1 0h1m1 0h1m2 0h2m1 0h1m2 0h2m2 0h2m1 0h3m2 0h1m2 0h1M4 18.5h1m2 0h1m2 0h1m1 0h6m3 0h6m4 0h1m2 0h1m1 0h4m2 0h2m1 0h2m1 0h1m1 0h1m1 0h1M6 19.5h2m1 0h1m2 0h2m1 0h7m1 0h1m1 0h1m1 0h2m4 0h1m3 0h1m1 0h1m1 0h1m1 0h2m1 0h6M6 20.5h1m2 0h3m1 0h1m5 0h3m2 0h3m2 0h2m1 0h3m1 0h3m1 0h1m1 0h3m1 0h1m2 0h2m1 0h1M4 21.5h2m2 0h1m2 0h1m2 0h4m1 0h6m2 0h4m2 0h1m3 0h1m1 0h1m1 0h1m1 0h2m1 0h1m2 0h1m1 0h1M4 22.5h1m1 0h1m3 0h3m1 0h1m1 0h1m4 0h1m2 0h6m2 0h3m1 0h3m1 0h1m2 0h2m1 0h4m1 0h1M4 23.5h3m1 0h1m6 0h3m2 0h1m1 0h2m1 0h5m2 0h2m1 0h1m1 0h2m1 0h8m1 0h1m1 0h2M5 24.5h2m3 0h1m1 0h2m3 0h2m1 0h2m6 0h3m1 0h1m2 0h6m1 0h2m1 0h1m2 0h1m2 0h1M6 25.5h1m4 0h4m3 0h1m2 0h3m1 0h1m1 0h1m1 0h1m1 0h4m1 0h1m3 0h3m2 0h3M4 26.5h2m2 0h5m1 0h1m1 0h6m1 0h1m1 0h6m1 0h1m1 0h1m1 0h1m6 0h6M4 27.5h1m1 0h1m1 0h1m3 0h3m1 0h3m3 0h2m2 0h1m3 0h1m4 0h2m1 0h2m1 0h4m3 0h1m2 0h2M6 28.5h1m1 0h1m1 0h1m1 0h1m3 0h5m3 0h1m1 0h1m1 0h1m1 0h2m1 0h2m3 0h2m1 0h1m1 0h2m1 0h1m1 0h1m3 0h1M5 29.5h2m1 0h1m3 0h3m1 0h2m1 0h1m2 0h2m2 0h1m3 0h1m2 0h1m1 0h1m1 0h1m1 0h6m3 0h5M8 30.5h5m1 0h1m1 0h1m2 0h1m3 0h1m2 0h5m1 0h1m3 0h3m1 0h1m1 0h1m1 0h6M5 31.5h1m2 0h1m2 0h1m1 0h2m1 0h7m5 0h1m2 0h4m1 0h3m1 0h5m2 0h2M4 32.5h4m2 0h2m2 0h2m2 0h3m1 0h1m1 0h1m1 0h5m1 0h3m2 0h1m2 0h3m1 0h1m1 0h3m1 0h3M6 33.5h1m2 0h1m5 0h5m4 0h4m1 0h2m1 0h3m6 0h1m3 0h1m2 0h2m1 0h1M5 34.5h1m1 0h2m1 0h3m1 0h1m1 0h1m2 0h4m4 0h2m1 0h5m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1M4 35.5h3m5 0h1m1 0h1m4 0h2m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m2 0h2m2 0h2m1 0h1m1 0h5m1 0h2m1 0h1M5 36.5h2m3 0h1m3 0h1m1 0h1m1 0h8m2 0h1m2 0h1m3 0h1m3 0h2m5 0h1m1 0h1m3 0h1M5 37.5h1m2 0h1m3 0h1m1 0h5m4 0h1m3 0h1m1 0h4m1 0h3m1 0h2m1 0h2m2 0h1m1 0h2m2 0h1M4 38.5h1m1 0h1m2 0h2m4 0h5m1 0h2m1 0h1m3 0h1m1 0h2m2 0h2m2 0h2m3 0h1m2 0h1m2 0h3M4 39.5h3m2 0h1m1 0h1m1 0h1m2 0h1m2 0h7m3 0h1m2 0h2m1 0h1m1 0h1m1 0h2m1 0h3m1 0h2m1 0h1m1 0h1M6 40.5h3m1 0h2m1 0h3m1 0h2m2 0h1m1 0h1m1 0h1m3 0h4m3 0h1m4 0h1m4 0h1m3 0h1m1 0h1M4 41.5h1m3 0h2m2 0h1m1 0h1m1 0h1m1 0h1m1 0h1m7 0h3m2 0h2m2 0h1m2 0h1m1 0h7m2 0h1M5 42.5h1m3 0h4m2 0h1m2 0h3m2 0h1m2 0h2m2 0h1m1 0h1m1 0h1m3 0h1m2 0h2m1 0h1m1 0h1m1 0h1m3 0h1M5 43.5h3m3 0h2m1 0h3m1 0h2m1 0h4m2 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h2m1 0h1m2 0h1M4 44.5h3m3 0h1m1 0h2m3 0h2m2 0h2m3 0h5m1 0h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h5M12 45.5h1m1 0h2m2 0h1m4 0h1m2 0h1m3 0h1m2 0h1m1 0h1m2 0h2m4 0h1m3 0h5M4 46.5h7m2 0h1m5 0h4m1 0h3m1 0h1m1 0h1m1 0h3m3 0h1m5 0h1m1 0h1m1 0h3m1 0h1M4 47.5h1m5 0h1m8 0h1m1 0h2m1 0h3m3 0h2m2 0h2m1 0h1m3 0h1m1 0h2m3 0h2m1 0h2M4 48.5h1m1 0h3m1 0h1m1 0h3m5 0h2m1 0h10m4 0h1m1 0h2m2 0h6m1 0h3M4 49.5h1m1 0h3m1 0h1m2 0h5m3 0h3m2 0h2m2 0h2m2 0h2m4 0h4m1 0h1m1 0h1m1 0h1m1 0h1M4 50.5h1m1 0h3m1 0h1m1 0h1m3 0h1m4 0h4m1 0h3m2 0h1m1 0h4m1 0h1m2 0h2m2 0h1m1 0h1m2 0h1m1 0h1M4 51.5h1m5 0h1m3 0h2m1 0h2m1 0h1m1 0h2m3 0h1m2 0h1m2 0h1m3 0h1m4 0h2m1 0h1m4 0h1M4 52.5h7m1 0h1m1 0h1m2 0h1m1 0h3m2 0h4m2 0h1m1 0h3m1 0h3m1 0h2m2 0h1m4 0h1m2 0h1"
+            />
+          </svg>
+          <figcaption>Aponte a câmera do seu banco para o QR code do Pix.</figcaption>
+        </figure>
+
+        <!-- prettier-ignore -->
+        <p class="pix">
+          Pix copia e cola:
+          <code id="pix-code">00020126580014BR.GOV.BCB.PIX013626993b9c-0ba4-4a81-a33e-f7168094543c5204000053039865802BR5925Dione Rai Pereira Sunochi6009SAO PAULO62140510EpgbIPym1K6304FC51</code>
+          <button type="button" class="copy-button" data-copy-target="pix-code">Copiar</button>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Feito por Dione Sunochio.</p>
+      <p>
+        Esta página não carrega nada de outro domínio. Nenhum cookie, nenhuma análise. O único
+        script é o do botão que copia o código Pix.
+      </p>
+    </footer>
+    <script>
+      const copyButtons = document.querySelectorAll('[data-copy-target]');
+      copyButtons.forEach((button) => {
+        button.addEventListener('click', async () => {
+          const target = document.getElementById(button.dataset.copyTarget);
+          if (!target) {
+            return;
+          }
+          const text = target.textContent.trim();
+          try {
+            await navigator.clipboard.writeText(text);
+            button.textContent = 'Copiado';
+            setTimeout(() => {
+              button.textContent = 'Copiar';
+            }, 2000);
+          } catch {
+            const fallback = document.createElement('textarea');
+            fallback.value = text;
+            fallback.setAttribute('readonly', '');
+            fallback.style.position = 'fixed';
+            fallback.style.opacity = '0';
+            document.body.appendChild(fallback);
+            fallback.select();
+            document.execCommand('copy');
+            document.body.removeChild(fallback);
+            button.textContent = 'Copiado';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
